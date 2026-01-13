@@ -49,9 +49,28 @@ Fine tuning on tasks from **GLUE benchmark**
     - Predict whether the 2nd sentence is an entailment, contradiction or neutral
     - Predict an answer to a question give a Wikipedia passage
 
-### Generate Pre-Trained Transformers (GPT)
+### Generative Pre-Trained Transformers (GPT)
 - Introduced by OpenAI in 2018
 - Use a transformer decoder structure, generating output after prompt from input
 - Does generative pretraining, predicting each token from previous k tokens
 
-DONE ONLY HALF OF THE LECTURE
+### GPT Fine-tuning
+Supervised fine-tuning is based on a collection of downstream NLP tasks, like BERT.
+Concatenates the input and ou tput in the same sequence with a delimiter.
+The representation vector of the last token in the last layer is used for prediction.
+
+## LLM Training Techniques
+### Instruction Fine-tuning
+- Prepares input-output pairs for training
+- Describes all NLP tasks using natural language instructions
+- Fine-tune the LLM to understand and process instructions
+- Can provide examples to show what the task is about
+    - E.g. Translate X to Y: A -> B, C -> D, E -> ?
+
+### Chain-of-Thought Annotation
+- Improves LLM performance on unseen reasoning tasks
+- Annotate questions with a chain of reasoning
+- This can also be done with exemplar
+
+### Human Feedback
+GPT-4 was fine-tuned with human feedback from over 50 experts, adversarially testing the model. E.g. against the ability to refuse requests on how to synthesise dangerous chemicals.
