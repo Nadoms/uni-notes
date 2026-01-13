@@ -1,4 +1,4 @@
-# Deep Learning For NLP
+# W5 - Deep Learning For NLP
 
 ## Deep Learning
 DL emphasises networks with higher numbers of layers compared to NN.
