@@ -54,4 +54,17 @@ There are loads of pre-trained LLMs around these days. They can be used to:
 - Furthers world economic divide with rich countries funding the most development
 - Petitions to slow down the biggest developers of AI to allow catch-up
 - Decisions should not be delegated to unelected, powerful tech leaders
-- 22 min in
+
+### Regulation
+EU AI Act prohibits:
+- Emotion recognition in education and workplace
+- Social scoring based on behaviour
+- Anything used to exploit vulnerabilities
+
+### Biggest Risks of AI
+- Discrimination, hate speech, exclusion
+- Misinformation
+- Compromising privacy
+- Malicious use
+- Socioeconomic harms
+- Monopoly battle
