@@ -11,8 +11,11 @@ Usually we have a bunch of scalars representing points in 3D space, e.g. materia
 5. Accumulate the colour into the pixel.
 ![53430316b3917f3abff31b5bcd03ce1f.png](./53430316b3917f3abff31b5bcd03ce1f.png)
 To help with comprehending renders, faux lighting can be added based on "surface normals," of smoothly varying data.
+This is again, highly parallel.
+**Trilinear intepolation** - Averaging out neighbouring voxels to avoid aliasing effects.
 
 ## Indirect Volume Rendering
+IVR tends to create visual artefacts or miss minute details.
 The goal here is to turn volume data into polygons. We can do this using iso-surfaces, like iso-lines on a contour map.
 ![43dc28780e8cbe213a1f86db2244f98b.png](./43dc28780e8cbe213a1f86db2244f98b.png)
 We basically have to do this in 3D:
@@ -23,8 +26,15 @@ There are 256 configurations of inside/outside vertices, but only 14 of them are
 ![9edb77df57d953c37b8c77aaae3b6fbc.png](./9edb77df57d953c37b8c77aaae3b6fbc.png)
 One a mesh of polygons has been created, you can render in real time again.
 
-**Proxy Geometry** - Drawing cross-sections to represent the volume, usually angled to be normal to the viewpoint.
+### Proxy Geometry
+This is about drawing cross-sections to represent the volume, usually angled to be normal to the viewpoint.
+It's a halfway-point between rendering a whole mesh and doing DVR.
 ![518c079b9fa4c636abac6a1b43370a0b.png](./518c079b9fa4c636abac6a1b43370a0b.png)
+![5dd1a31d65b00efe156ba2d15954ccc4.png](./5dd1a31d65b00efe156ba2d15954ccc4.png)
+
+**Splatting** - Every volume element is splatted on the viewing plane in order of distance.
+
+**Shear-warp** - Shears the non-aligned volume data to align with the viewing plane and then warps the image to correct for distortion.
 
 **Texture Mapping** - Applying textures to a volume.
 ![4eeba30a5046bd2db361bbb253954786.png](./4eeba30a5046bd2db361bbb253954786.png)

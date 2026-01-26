@@ -30,3 +30,8 @@ Spacial enumeration techniques are used to organise space so that high-level cal
 - Similar to Octree, but more adaptive.
 - Can be axis-aligned, like below.
 ![a5a14d860fbedc385e28ab0a0c691ba9.png](./a5a14d860fbedc385e28ab0a0c691ba9.png)
+
+## Culling
+There is frustum culling, which doesn't render objects outside our your FOV.
+Then there is portal culling, which considers a section of the FOV through doors, windows, etc.
+![2f519589a5c7194ec0132353108b709d.png](./2f519589a5c7194ec0132353108b709d.png)
