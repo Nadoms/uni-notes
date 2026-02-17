@@ -21,4 +21,6 @@ The **Hypothesis Space**:
 **Bayes model** - The theoretical best possible predictor, minimising population risk.
 **Empirical risk, $\hat{R}$** - The average loss over a set of examples.
 **Population risk, $R$** - The expected loss with respect to the unknown, true probability distribution. The "true" risk.
-**Expected label** - The Bayes model under squared loss.
+**Expected label** - The expected value of a probability distribution.
+
+**Theorem**: The Bayes model under squared loss is equal to the expected label.
