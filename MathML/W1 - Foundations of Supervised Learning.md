@@ -23,14 +23,7 @@ Binary cross-entropy can be used for binary classification problems instead.
 ### Algorithm
 Learning algorithms are usually iterative, taking a model from point A to point B in the **Hypothesis Space**:
 ![25f441cde0033ed87c4470a8bb01d2b0.png](./25f441cde0033ed87c4470a8bb01d2b0.png)
-<<<<<<< Updated upstream
-**Bayes model, $y^*$** - The theoretical best possible predictor, minimising population risk.
-**Empirical risk, $\hat{R}$** - The average loss over a set of examples.
-**Population risk, $R$** - The expected loss with respect to the unknown, true probability distribution. The "true" risk.
-**Expected label** - The expected value of a probability distribution.
-
 **Theorem**: The Bayes model under squared loss is equal to the expected label.
-=======
 
 ### Underfitting & Overfitting
 We already know about this. Test / training loss will typically follow this shape when starting to overfit:
@@ -44,4 +37,3 @@ We already know about this. Test / training loss will typically follow this shap
 **Bayes model** - The theoretical best possible predictor, minimising population risk.
 **Expected label** - The Bayes model under squared loss.
 **Bayes risk** - Simply the risk value of the Bayes model.
->>>>>>> Stashed changes
