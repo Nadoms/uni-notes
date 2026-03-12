@@ -37,3 +37,5 @@ Gated recurrent units:
 Concatenate hidden representations computed by two RNNs using the original and reversed sequences as input.
 
 **Multilayer RNN** - Stack multiple layers of RNNs. The output of one hidden layer is used as the input for the next hidden layer.
+
+**Encoder-Decoder RNN** - Two RNNs to handle sequence-to-sequence tasks, such as translation.

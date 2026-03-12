@@ -9,6 +9,7 @@ The realism of the shadow scales with the number of shadow feelers sampling the 
 Instead of taking a Whitted-style hierarchical approach, we can trace paths of rays taking uniformly random directions.
 ![01b33235438ea89dcab418e53e2dedf6.png](./01b33235438ea89dcab418e53e2dedf6.png)
 From this sampling, we can estimate how light would behave in real life. This allows simulation of diffuse surfaces by shooting many rays through each pixel.
+Rays are probabilistically terminated through **Russian Roulette**
 
 **SPP** - Samples per pixel, usually in the 100s or 1000s to get a noise-free image.
 

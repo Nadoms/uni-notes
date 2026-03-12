@@ -32,8 +32,28 @@ It compares the signal to a set of pure sine waves.
 6. Take the logarithm ?? Idk bruh
 ![b5493176a67b1d5ae31160d68bc917d8.png](./b5493176a67b1d5ae31160d68bc917d8.png)
 
-## Speech Recognition
+## Automatic Speech Recognition
 Automatic speech recognition is to transform acoustic information from speech waveforms into linguistic structures.
+![ef2fe69d6f108c78e9761cbfcb05983b.png](./ef2fe69d6f108c78e9761cbfcb05983b.png)
 
 1. Extract spectral features like energy and frequency information, e.g. using MFCC.
-2. 
+2. Use acoustic models to detect phonemes from audio signals.
+	- Hidden Markov model with Gaussian mixture model dominated historically
+    - NNs have been shown to outperform GMMs recently
+3. Define phoneme combinations for words with a pronunciation dictionary.
+4. Predict word sequences based on context with a language model outputting sentence probabilities.
+
+## End-to-End Speech Recognition
+This process can be done entirely in a nearal network, directly mapping audio features to text.
+![0f2af0c22aba39171a7eed820b130fc0.png](./0f2af0c22aba39171a7eed820b130fc0.png)
+This has a simpler architecture, unified learning and improved performance.
+The NN output can be connected to a language model to correct misheard words.
+
+## Speech Synthesis
+1. Preprocess the text by normalising words (Dr. -> doctor), handling abbreviations (e.g. -> for example), and numbers.
+2. Extract linguistic features, punctuation, structure using POS tagging and syntactic structure analysis.
+3. Complete phonetic analysis to output a sequences of phonemes. If word in dictionary, perform a lookup, else do grapheme-to-phoneme conversion.
+4. Prosody modelling to control pitch, stress, duration and intonation of each phoneme, using linguistic rules and ML models.
+5. Generate a waveform with the processed information with concatenative / formant / neural synthesis.
+
+This classical pipeline can also be replaced with an end-to-end model, or certain steps in the pipeline can be replaced.

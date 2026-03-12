@@ -30,3 +30,21 @@ One must define the context, and then pick a prediction task:
 - How many times a word appears in the context of a target word (GloVe)
 
 ### W2V: Continuous Bag-of-Words Model
+- Look at each word and find its context on either side
+- Attempt to classify the word in the middle e.g. [large, scale, value, computation] class: [singular]
+![dda57f1fe74e5275f95d39b24e94d032.png](./dda57f1fe74e5275f95d39b24e94d032.png)
+- Each context word corresponds to a vector of weights for every word
+- Take average of context vectors forming a feature vector
+- Select one of the word classes using logistic regression
+
+### W2V: Skip-Gram Model
+- Predict context from target instead
+- Multilabel classification (one object can have multiple classes)
+![c5511d2316133b3d3a84080b3d2c0d3f.png](./c5511d2316133b3d3a84080b3d2c0d3f.png)
+- Can be improved through negative sampling
+![bb056d8e9173a54077e1f0f9521a33aa.png](./bb056d8e9173a54077e1f0f9521a33aa.png)
+
+### GloVe Model
+- Utilises the frequency that a word appears in another word's context
+- Word-word co-occurence matrix from entire corpus
+- King - man + woman = queen

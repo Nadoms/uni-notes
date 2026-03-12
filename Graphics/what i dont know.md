@@ -1,0 +1,11 @@
+# what i dont know
+- continuity
+    - g0 continuity is just being connected
+    - g1 continuity is tangents in same direction
+    - g2 continuity is curvature in same direction
+    - cx continuity is gx continuity and the (tangent, curvature) vectors have the same magnitude
+- nurbs (maybe dont need to)
+    - 
+- bump mapping is just using a texture to make an object look detailed e.g. golf ball
+- implicit surface disadvantages
+- hemicube radiosity
