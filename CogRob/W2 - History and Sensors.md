@@ -54,3 +54,20 @@ Levels of sensory processing:
 - Medium - Signal processing, e.g. microphone, sonar.
 - High - Computation, e.g. vision, NLP.
 Vision in robots can be a form of active sensing.
+
+**Passive vision** - Bottom-up image-processing approach.
+**Active vision** - Use task knowledge to look for particular stimuli.
+
+**Sonar** - Sound Navigation and Ranging.
+- Used for echolocation.
+- Uses time-of flight principle.
+- Usually 30 degree cone of vision.
+- Cannot know if received signal is the original one
+**Lidar** - Light Detection and Ranging.
+- Good for indoor mapping.
+- Emits highly amplified, coherent radiation.
+- Planar 2D, usually horizontal.
+- Expensive, useful for autonomous cars.
+**RGB-D** - RGB with depth.
+- Infrared light striping system + RGB camera.
+- Kinect would detect range 1.2m to 3.5m.

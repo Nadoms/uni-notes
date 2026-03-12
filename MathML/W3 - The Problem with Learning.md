@@ -6,6 +6,7 @@ Risk can be traced to either:
 **Random variance** - Caused by random nature of sampling, or overfitting.
 **Systematic bias** - Caused by learning algorithm, bias in sampling, underfitting, etc.
 ![fe2d4d7c6bdb72eb466f00654ffa9f4e.png](./fe2d4d7c6bdb72eb466f00654ffa9f4e.png)
+Each dot here is a model trained on a new training set,
 
 We know the population risk is the unknown average loss:
 ![0a08b38d78d1d8bdd7c33786492b4336.png](./0a08b38d78d1d8bdd7c33786492b4336.png)

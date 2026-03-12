@@ -18,7 +18,7 @@ Binary cross-entropy can be used for binary classification problems instead.
 
 The **Hypothesis Space**:
 ![25f441cde0033ed87c4470a8bb01d2b0.png](./25f441cde0033ed87c4470a8bb01d2b0.png)
-**Bayes model** - The theoretical best possible predictor, minimising population risk.
+**Bayes model, $y^*$** - The theoretical best possible predictor, minimising population risk.
 **Empirical risk, $\hat{R}$** - The average loss over a set of examples.
 **Population risk, $R$** - The expected loss with respect to the unknown, true probability distribution. The "true" risk.
 **Expected label** - The expected value of a probability distribution.
