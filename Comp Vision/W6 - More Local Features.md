@@ -35,3 +35,38 @@ R is:
 Window options:
 - Uniform window, but the problem is that it's not rotation invariant
 - Gaussian window, much better
+
+## Scale Invariant Region Selection
+How do we detect a region such that scale doesn't matter?
+
+**Exhaustive search** - Vary the window sizes while comparing descriptors.
+![09ca5903677168038a6f77149d9f4fb3.png](./09ca5903677168038a6f77149d9f4fb3.png)
+This is extremely computationally inefficient, just possible.
+
+**Automatic scale selection** - The size of any region should be defined by maximising some response function.
+![5534e31769e48d15f0a938c374ebfe58.png](./5534e31769e48d15f0a938c374ebfe58.png)
+The scale inariant region size is found in each image independently.
+Then, size normalisation can be done through rescaling.
+
+The Laplacian is:
+- Very noise sensitive
+- Loses directional information
+- Always combined with smoothing operation
+
+It gets its maximum response when its scale fits the blob perfectly. This is the **characteristic scale**.
+![dd39631c858423e29f420625f3981c3d.png](./dd39631c858423e29f420625f3981c3d.png)
+We can run LoG of different sizes on an image, and compare points of interest to their 26 neighbours on its level or other levels.
+Local optima are noted down.
+![b95ab70e640679dd955226280738254f.png](./b95ab70e640679dd955226280738254f.png)
+
+Combining Harris and LoG, we can choose regions from the Harris response, and only choose the scale based on LoG.
+![4c576d2f29ada91e562d8a5e263ee30a.png](./4c576d2f29ada91e562d8a5e263ee30a.png)
+
+### Difference of Gaussians
+LoG can be approximated with a difference of Gaussians (DoG). This allows us to skip computing 2nd derivatives.
+![73762eb06661a8d72b28ffb0c0911bb1.png](./73762eb06661a8d72b28ffb0c0911bb1.png)
+
+In DoG, there is a pyramid where Gaussian convolutions happen over and over.
+Between each pair of Gaussians, the difference is taken.
+Every **octave**, the image it scaled down as the small detail has been blurred out.
+![53eca2493af52d746b24687b6afd2858.png](./53eca2493af52d746b24687b6afd2858.png)
