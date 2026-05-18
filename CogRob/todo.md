@@ -1,0 +1,9 @@
+- hammer
+- developmental and swarm robotics
+- developmental mechanisms
+- robot history
+- stages of joint attention in children
+- Marr's hierarchy of abstraction of cognition
+- behaviour based robotics
+- theory of mind
+- visual homing, qualnav
