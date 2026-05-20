@@ -16,7 +16,7 @@ Options:
 
 ### Topological Navigation
 **Distinctive places** - Using easy to recognise landmarks as waypoints.
-**Associative methods** - Reacting to perceptual state of the environment.
+**Associative methods** - Reacting to perceptual state of the environment. E.g. visual homing (bees), QualNav (constellations).
 The world can be represented by a relational graph of nodes (landmarks) and edges (navigable paths).
 ![00cdb65ffa6b04dcbde2e86a2c374f1f.png](./00cdb65ffa6b04dcbde2e86a2c374f1f.png)
 
@@ -34,7 +34,7 @@ Challenges:
 ![1a97632c0421b9cf51a4e69f074b7709.png](./1a97632c0421b9cf51a4e69f074b7709.png)
 
 ### Simultaneous Localisation and Mapping (SLAM)
-This is the state of the art. SLAM builds a map whilst localising using LIDAR.
+This is the state of the art. SLAM builds a map whilst localising using LIDAR or sonar.
 - Each particle presents a path and a local map.
 - Each observation updates only the sensed area of the maps and computes belief in each particle.
 - Use tree to save particles which form history of current particle set.

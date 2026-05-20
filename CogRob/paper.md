@@ -23,4 +23,8 @@
 23) spatial A
 24) Theory of Mind ?? C D
 25) Waypoints gateways?? Associative methods
-26) 
+
+essay q attempts
+developmental robotics focuses on creating robots which develop, reflecting the process of growth from babies to adults. it focuses around the individual, rather than generations.
+evolutionary robotics however is not about one robot. its about many at a time, which learn throughout their lifetime and pass its genes onto children if they were successful.
+swarm robotics is about many robots interacting with each other to form one cohesive system, one "machine", in the same way ants would coalesce to make a colony.

@@ -11,6 +11,7 @@ Could contain:
 - A input question
 This ties to LLMs having zero understanding and only "instructions".
 
+**Gavagai problem** - Referring an object with a word is naturally ambiguous. Which part of the object is that word? In what way?
 **Grounding** - Mapping words to the real world meaning, usually visually.
 **Concrete words** - Words which represent an object concretely. (20%)
 **Abstract words** - Words which cannot be mapped easily to one visual meaning. (80%)
@@ -30,6 +31,11 @@ _note: missed 15 min of lecture 2_
 **Artificial Cognitive Systems** - Modelling of simulated and embodied/robotic agents taking inspiration from natural and cognitive systems
 **Intelligent Robotics** - Engineering approach to the design of intelligent capabilities in robots using any AI methods, not psychology
 
+Elements of CogRob:
+**Embodied cognition** - The body plays a critical role in cognitition, e.ggg. a passive walker using leg structure instead of motors.
+**GOFAI** - Classical symbolic AI, reasoning and planning, sense-plan-act.
+**Behaviour-based** - Noted but its just sense-act cycles.
+
 Reading:
 ![dd57fe209f2229e6bea5b142184b021b.png](./dd57fe209f2229e6bea5b142184b021b.png)
 
@@ -40,3 +46,13 @@ Cognitive systems can be described with:
 - Computational / bio-inspired spectrum
 - Level of abstraction in biological model
 ![978d17f663c064681dbb3d0d103d2da3.png](./978d17f663c064681dbb3d0d103d2da3.png)
+
+**Cognition** - The process by which an automous system perceives its environment, learns from experience, anticipates the outcome of events, acts to pursue goals, and adapts to changing circumstances.
+Cognitive systems host two main cycles:
+- Act -> Perceive -> Act
+- Anticipate -> Learn -> Adapt -> Anticipate
+
+**Marr's level of abstraction** applies to all disciplines of computer science, not just CogRog. They are:
+- Level 1 - Theory/computational. "What is the phenomena we're representing, and why?"
+- Level 2 - Algorithmic. "How can it be represented as a process with inputs and outputs?"
+- Level 3 - Implementation. "How is it implemented?"

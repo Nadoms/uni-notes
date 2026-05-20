@@ -7,6 +7,7 @@
 
 Weiner's Cybernetics (1948) proposes the principle of self-regulation, continuously correctly the system based on what it senses.
 ![1d5f83c4d9407ebd6d164f66a6a4cc8c.png](./1d5f83c4d9407ebd6d164f66a6a4cc8c.png)
+**Synthetic methodology** - Using robots to test cognitive hypothesis.
 Walter's Tortoises (1948) contained two conditional Pavlov circuits where the robot associates a neutral stimulus with a significant one.
 Braitenberg's Vehicles (1986) added a psychological aspect, with emotion, behaviours based off them, etc.
 
@@ -17,6 +18,9 @@ Braitenberg's Vehicles (1986) added a psychological aspect, with emotion, behavi
 **Android** - Designed with the intention of being indistinguishable from humans in its appearance and behaviour.
 It can be difficult to avoid the **uncanny valley** with androids.
 ![f3de5baa4b1124e1d6506e19da0e8cdc.png](./f3de5baa4b1124e1d6506e19da0e8cdc.png)
+
+**Biomimetic** - A robot which has an animal or plant-like body plan and actuators.
+**Industrial** - Robots which are using in factories for manufacturing usually.
 
 ## Sensors and Actuators
 Robots generally contain:
@@ -30,13 +34,19 @@ Robots generally contain:
 **Joint** - An actuator connecting two body parts with at least 1 DOF.
 ![3343b9c5936243a727b36a537febd68b.png](./3343b9c5936243a727b36a537febd68b.png)
 **Holonomic** - Total DOFs $=$ Controllable DOFs
-**Non-holonomic** - Total DOFs $\le$ Controllable DOFS
-**Redundant** - Total DOFs $\ge$ Controllable DOFS
+**Non-holonomic** - Total DOFs $\ge$ Controllable DOFS
+**Redundant** - Total DOFs $\le$ Controllable DOFS
 
 **Active actuator** - Uses energy to move the effector to desired position.
 **Stiff effector** - Predetermined position and trajectory.
 **Compliant actuator** - Responds to external force for safe HRI.
 **Passive effector** - Exploit body-environment physics interaction using minimal energy, e.g. gliding.
+
+Types of actuator:
+- Electric motor (rotation due to electric current)
+- Hydraulic (changes in fluid pressure)
+- Pneumatics (changes in air pressure)
+- Reactive materials (chemical reactions causing movement)
 
 ### Embodied Intelligence
 - Many animals exploit passive effectors and compliant effectors.

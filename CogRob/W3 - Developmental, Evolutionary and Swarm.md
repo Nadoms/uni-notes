@@ -30,6 +30,10 @@ There are 6 principles of DevRob.
 **Online, Open-ended, Cumulative** - Learning continuously while performing a task, with it all building up over time.
 
 ## Evolutionary Robotics
+Classical robotics goes off sense-plan-act.
+**Behaviour-based** robotics uses parallel behavioural routines simultaneously. Sense-behave. Acts on immediate sensory input, like fast-nerve responses when touching a hot surface.
+![648a3e23fadaca6e94f78207222631ad.png](./648a3e23fadaca6e94f78207222631ad.png)
+
 Evolutionary robotics automates robot design through an evolutionary computation process.
 
 Divide and conquer, separate out perception, planning and action, each trained separately.
@@ -41,7 +45,7 @@ Divide and conquer, separate out perception, planning and action, each trained s
 **Fitness** - A number computed as a result of evaluation on the input genotype.
 ![1a0c60ae4b6099e49eb0e4dc5f6bf08c.png](./1a0c60ae4b6099e49eb0e4dc5f6bf08c.png)
 
-Basically get a bunc h of random agents, have them perform the task, take the top x% performers, kill the rest, take the genotype of those x% and apply slight variation to get another batch of robots. Repeat.
+Basically get a bunch of random agents, have them perform the task, take the top x% performers, kill the rest, take the genotype of those x% and apply slight variation to get another batch of robots. Repeat.
 
 Flipping bits in binary encoding has massive implications for leftmost bits.
 **Grey-encoding** - Different mapping of real to bits, ensuring that any bit flip changes the result by a small amount, hence small mutations.
@@ -61,10 +65,10 @@ This compresses the genotype down and adds structure within the network. (Kitano
 **Genetic Regulator Network** - Model DNA and protein-gene interaction, from 1-1 to many-many between genes and body attributes.
 
 ## Swarm Robotics
-This is the study of how independent robots can interact as a group, giving rise to collective behaviour on a micro and macro level.
+This is the study of how independent robots can interact as a group, giving rise to collective behaviour on a micro (peer-to-peer) and macro (systemwide) level.
 
-**Ant colony optimisation** - Ants like to follow the smell of other ants, making optimal paths become more attractive.
+**Ant colony optimisation** - Ants like to follow the smell of other ants, making optimal paths become more attractive. This can be used to lead robots behind each other.
 
 Requires a decentralised approach with limited communication.
-
-Multi robot systems have higher degree of fault tolerance than a single robot, due to systems inherent redundancy.
+Maximal scalability to virtually any system size.
+Higher degree of fault tolerance than a single robot, due to the system's inherent redundancy. There is no central controller.
