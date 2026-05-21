@@ -9,10 +9,10 @@ baldwin, the word is heard when object is out of sight, but when the body is ori
 interference - the word is heard while the body is oriented toward the foil. modi is mapped wrongly. competing associations. performance drops below 50%
 posture change - if posture changes between seeing the object and hearing the name, mapping fails.
 
-they use 3 neural fields linked:
-visual field - colour and appearance of objects
-word field - processes heard words
-posture field - tracks joint angles of eyes head torso
+they use 3 neural fields linked through HEBBIAN CONNECTIONS:
+visual field - colour and appearance of objects (2 SOMs)
+word field - processes heard words (0 SOM)
+posture field - tracks joint angles of eyes head torso (1 SOM)
 
 there is no direct connection between visual and word. they are linked through posture.
 thispaper falls under developmental robotics, using a model to understand infants.
