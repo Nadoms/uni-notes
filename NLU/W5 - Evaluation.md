@@ -77,5 +77,10 @@ Non-normal distribution + paired data - Wilcoxon signed-ranked test
 When measuring performance over multiple categories, one can either do:
 - **Macro averaging** - Average the metrics naively.
 - **Weighted macro averaging** - Average the metrics according to the counts of that category.
-- **Micro averaging** - TODO
-- 7 more slides
+- **Micro averaging** - Another way of averaging. Recalculate each metric by pooling together the TPs, FPs, FNs, etc.
+
+F-score is the most versatile and useful metric available.
+![76b0af1269fd53888225cab47acb479d.png](./76b0af1269fd53888225cab47acb479d.png)
+
+**Exact match (EM)** - The percentage of predictions exactly matching the ground truth answers, used for span extraction.
+**Perplexity** - Idk, a measure for how surprised a language model is by a correct sequence. Lower is better.
