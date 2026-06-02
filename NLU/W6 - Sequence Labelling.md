@@ -23,6 +23,11 @@ This is identifying and labelling any named entities in the text, like:
 - Location
 - Geo-politcal entity
 
+Some tagging schemes include:
+- IO, just labelling in-class and out.
+- BIO, labelling begin-class, in-class, and out.
+- BIOES, labelling begin, in, end-classes, single word classes, and out.
+
 All of these methods can face ambiguity during the process.
 
 ## ML-based Approaches

@@ -1,6 +1,6 @@
 # W1 - NLU Tasks and Applications
 **Sequence classification** - Looking through an entire sequence and classifying it as something.
-**Sequence labelling** - Labelling each token in a word as something.
+**Sequence labelling** - Labelling each token in a sentence as something.
 **Pairwise sequence classification** - Classifying the relationship between two sequences.
 **Span-based operations** - Looking at every possible span in a sequence and identifying / classifying / relation classifying it.
 
