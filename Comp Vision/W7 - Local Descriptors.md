@@ -59,6 +59,6 @@ Images are projected into a new plane such that only depth in the x-axis matters
 
 ### Correspondences
 To get point data in the first place, we need points from both images which match.
-**Epipolar lines** - Match for a given $x_l, y_l$ lies on the line $y_l = y_r$, if the camera is rectified to align with the baseline.
+**Epipolar constraint** - Match for a given $x_l, y_l$ lies on the line $y_l = y_r$, if the camera is rectified to align with the baseline.
 
 **Moravec operator** - An operator for corner detection. idk
