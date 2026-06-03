@@ -44,3 +44,39 @@ The algorithm iterates:
 To classify using a forest of stumps, just sum their amount of say during voting.
 
 ## Face Detection
+
+### Applications
+- Face focus, exposure, red-eye removal
+- Tracking
+- Adult / child detection
+- Face recognition
+- Cat and dog face-on detection
+
+### Viola Jones
+By blurring a face, one can simplify the structure down into **rectangular features** containing shadows and highlights.
+![4cf278bc78a66d132cf42e31a63c2595.png](./4cf278bc78a66d132cf42e31a63c2595.png)
+
+**Integral image** - At a pixel $x, y$, its value is the sum of all pixels at positions $(<x, <y)$.
+![2fa018d7ee2c0d6a6bd9bcb29e3bfa5f.png](./2fa018d7ee2c0d6a6bd9bcb29e3bfa5f.png)
+A bigger data type is required to store such large values.
+For more complicated integral calculations, multiple intensity reference are required. E.g. 4 here to find the green square.
+![d7bbd42a37daea35ab9018a16b1d2e02.png](./d7bbd42a37daea35ab9018a16b1d2e02.png)
+
+For Viola Jones algorithm:
+- Faces must be 24x24, normalised intensities, straight-on
+    - $x'=(x-\bar{x})/\sigma$, where $\bar{x}$ is mean, etc. This makes all images have the same avg intensity and contrast.
+    - Within a window, the std can be calculated from the mean and integral image squared.
+    - This normalisation gives dark pixels negative values and light pixels positive values.
+- Uses rectangle features
+- Uses AdaBoost to classify faces
+- 200 rectangular features
+- 95% detection rate
+The two best features are below:
+![58d550c82e5eb6921c76142c128f400e.png](./58d550c82e5eb6921c76142c128f400e.png)
+
+Issue: Most patches are not faces. Slow processing.
+Solution: **Cascade classifier** which quickly discards most non-faces (70%).
+The 10-stage cascade had a much lower FP rate and slightly lower detection. Each stage has more features. Detection speed increase.
+- Trained in a day
+- Searches 384x288 images in 0.067s
+- Applies features at multiple scales and locations
