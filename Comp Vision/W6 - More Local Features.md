@@ -2,7 +2,7 @@
 ## Local Interest Point Detection
 Goal: Detect corners of objects, which have significant pixel change in multiple directions.
 
-**Harris detector** - Output the change in intensity between two arbitrary points.
+**Harris detector** - Output the change in intensity between two neighbouring points.
 ![a9d41d63b386db17c18627bfdff737cc.png](./a9d41d63b386db17c18627bfdff737cc.png)
 
 For small shifts, we can use the 2x2 matrix $M$:

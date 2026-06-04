@@ -69,4 +69,4 @@ The **image** of a matrix $A$ is defined as $A[v]$, where $v$ is a random vector
 The **rank** of a matrix $A$ is the number of orthogonal vectors required to represent the matrix image.
 E.g. $\text{dim}(2e_1+e_2)=2, \text{dim}(-e_1)=1$
 
-A **full rank** matrix is where its rank is equal to its smallest dimension. $\text{rank}(A)=\text{min}(m,n)$
+A **full rank** matrix is where its rank is equal to its smallest dimension (max). $\text{rank}(A)=\text{min}(m,n)$
